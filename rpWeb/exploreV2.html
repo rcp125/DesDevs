@@ -1,0 +1,164 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/exploreV2.css">
+  <link rel="stylesheet" type="text/css" href="css/diamonds.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/jquery.diamonds.js"></script>
+</head>
+
+<header>
+  <img src="img/logo.png">
+  <nav>
+    <ul>
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="works.html">Folio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <div style=" position: absolute; left: 20%;">
+    <b><p>Photography</p></b>
+      <p>Nature</p>
+      <p>Animals</p>
+      <p>Urban</p>
+      <p>Macrophotography</p>
+      <p>Portraits</p>
+    </div>
+
+   <div style=" position: absolute; left: 40%;">
+    <b><p>Graphic Design</p></b>
+      <p>Photomanipulations</p>
+      <p>Creative</p>
+      <p>Touchups</p>
+   </div>
+
+   <div style=" position: absolute; left: 60%;">
+    <b><p>Cinematography</p></b>
+      <p>Short Films</p>
+      <p>Nature</p>
+      <p>Vacations</p>
+   </div>
+
+   <div style=" position: absolute; left: 80%;">
+    <b><p>Music</p></b>
+      <p>Electronic</p>
+      <p>Beats</p>
+   </div>
+
+  </div>
+</div>
+
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">
+      <div id="about-head">
+       <button class="about-button" onclick="openNav()" style=" cursor: pointer;">Catalog</button>
+      </div>
+    </span>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">My Mission</h3>
+  <p>Everyone has a passion. For some, it is difficult to express it. I first explored and experimented with Photoshop in 7th grade, using Photoshop CS5 to make designs and sports edits. I created an instagram account to share my work and the account eventually reached about 10 thousand followers. From there, my interests in the arts expanded to producing music, photography, and now, I seek to learn cinematography. In addition to sharing my work on my website, I encourage others to send me their wide spectrum of works so that they can join the rpartwork community. </p>
+  <br><br>
+  <center><a href="aboutV2.html" class="button">Click For More</a></center>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+      <div id="about-head">
+       <button class="about-button">Latest Works</button>
+      </div>
+    </span>
+  </div>
+</div>
+
+<center>
+<div class="grid-border">
+  <div class="diamond-grid">
+    <div class="item"><img src="img/img1.jpg"></div>
+    <div class="item"><img src="img/img2.jpg"></div>
+    <div class="item"><img src="img/img3.jpg"></div>
+    <div class="item"><img src="img/img4.jpg"></div>
+    <div class="item"><img src="img/img5.jpg"></div>
+    <div class="item"><img src="img/img6.jpg"></div>
+    <div class="item"><img src="img/img7.jpg"></div>
+    <div class="item"><img src="img/img8.jpg"></div>
+    <div class="item"><img src="img/img9.jpg"></div>
+  </div>
+</div>
+</center>
+
+  <script type="text/javascript">
+    $(".diamond-grid").diamonds({
+    size : 220, // Size of diamonds in pixels. Both width and height. 
+    gap : 5, // Pixels between each square.
+    hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+    autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+    itemSelector : ".item" // the css selector to use to select diamonds-items.
+    });
+  </script>
+
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+      <div id="about-head">
+       <button class="about-button">Video</button>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>ENTER VIDEO HERE</p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption-fin">
+    <div class="bg-fin" style="background-color: rgba(1,1,1,.8);">
+      <center><h1>
+        Like My Work? 
+      </h1>
+      <p style="color: white; margin-top: 0; margin-bottom: 5em;">Feel free to share my website on the following socials. </p>
+      <div class="socials">
+        <img src="img/fb.png">
+        <img src="img/ig.png">
+        <img src="img/mail.png">
+        <img src="img/twit.png">
+        <img src="img/yt.png">
+      </div>
+
+    </center>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

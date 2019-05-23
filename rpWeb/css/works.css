@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+    margin: 0 0 1em 0;
+    font-family: Arial;
+    padding: 0;
+    background-image: url(../img/whitetriBG.jpg);
+    background-size: cover;
+}
+
+header{
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0.25em 1em;
+}
+
+nav a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5rem;
+    color: black;
+}
+
+nav a:hover,
+nav a:focus {
+    color:#436EEE;
+    transition: 0.5s;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#gdIcon{
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: -100%;
+}
+
+#gdText{
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+
+#musicIcon{
+    height: 100px;
+    position: absolute;
+    left: 70%;
+    top: -100%;
+}
+
+#musicText{
+    position: absolute;
+    left: 70.5%;
+    top: 0%;
+}
+
+#photoIcon{
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 300%;
+}
+
+#photoText{
+    position: absolute;
+    left: 17%;
+    top: 400%;
+}
+
+
+#cineIcon{
+    height: 120px;
+    position: absolute;
+    left: 70%;
+    top: 300%;
+}
+
+#cineText{
+    position: absolute;
+    left: 65%;
+    top: 400%;
+}
+
+#gdIcon, #musicIcon, #photoIcon, #cineIcon {
+  filter: opacity(0.5);
+}
+
+#gdIcon:hover, #musicIcon:hover, #photoIcon:hover, #cineIcon:hover {
+  filter: opacity(1);
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#button{
+    display: inline-block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px black;
+    padding: .75em 1.75em;
+    color: black;
+    margin: 3.5em 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+#button:hover,
+#button:focus{
+    background:black;
+    color:white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+div img {
+    filter: grayscale(0.5);
+    transition: 1.5s;
+}
+
+div img:hover {
+    filter: grayscale(0);
+}

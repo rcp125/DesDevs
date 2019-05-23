@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPARTWORK</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/photography.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="img/logo.png">
+    <nav>
+        <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="aboutV2.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<center>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+
+    <a href="#"><img id="tuIcon" src="img/touch.png"><p id="tuText">Touch Ups</p></a>
+    <a href="#"><img id="pmIcon" src="img/photomanu.png"><p id="pmText">Photo Manipulation</p></a>
+    <a href="#"><img id="creativeIcon" src="img/creative.png"><p id="creativeText">Creative</p></a>
+    <a href="graphicdesign.html"><img id="tpIcon" src="img/tp.png"><p id="tpText">Tiny Planet</p></a>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">
+      <div id="about-head">
+       <button class="about-button">Photography</button>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div id="button" onclick="openNav()">Styles</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</center>
+
+<div class="row"> 
+  <div class="column">
+    <figure class="port-item">
+        <img src="img/tp/nyc.jpg" style="width:100%">
+      <center>
+        <figcaption class="port-description">
+         <p>NYC Tiny Planet</p>
+         <a href="" class="button-small">Work Details</a>
+        </figcaption>
+      </center>
+    </figure>
+  </div>
+  <div class="column">
+     <figure class="port-item">
+        <img src="img/img17.jpg" style="width:100%">
+      <center>
+        <figcaption class="port-description">
+          <p>Arch of the Oculus</p>
+          <a href="sss.html" class="button-small">Work Details</a>
+        </figcaption>
+      </center>
+    </figure>
+  </div>  
+  <div class="column">
+  </div>
+  <div class="column">
+  </div>
+</div>
+
+</body>
+</html>

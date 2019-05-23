@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+    margin: 0 0 1em 0;
+    font-family: Arial;
+    padding: 0;
+    background-image: url(../img/whitetriBG.jpg);
+    background-size: cover;
+}
+
+header{
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0.25em 1em;
+}
+
+nav a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5rem;
+    color: black;
+}
+
+nav a:hover,
+nav a:focus {
+    color:#436EEE;
+    transition: 0.5s;
+}
+
+div img{
+    width: 53%;
+    margin: 1em;
+    position: absolute;
+}
+
+#description{
+    margin: 1em 2em;
+    padding: 1.4em;
+    position: absolute;
+    left: 53%;
+    border: solid 1px black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div p{
+    font-size: 1.5rem;
+}
