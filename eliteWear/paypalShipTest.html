@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Button Example Code</title>
+
+<!-- START META TAG SECTION -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<!-- END META TAG SECTION -->
+
+<script src="js/ship.js"></script>
+
+</head>
+
+<body>
+
+<!-- START SAMPLE CODE SECTION -->
+
+<!-- Start of Add to Cart Form -->
+<!-- Note: target="paypal" was replaced with target="_self" -->
+<!-- Note: shopping_url also added to code -->
+<!-- These two changes allow better functionality with IE and Firefox --> 
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
+<input type="hidden" name="cpp_header_image" value="https://www.yourwebsite.com/logo.jpg"> 
+<!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
+<input type="hidden" name="business" value="marchrahul@gmail.com">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="item_name" value="Elite Wear Long Sleeve">
+<!-- Replace value with the web page you want the customer to return to -->
+<input type="hidden" name="shopping_url" value="http://www.yourwebsite.com/Shipping_Delivery_08.html">
+<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+<!-- Replace value with the web page you want the customer to return to after item cancellation -->
+<input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="shipping">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="cn" value="Add special instructions to the seller:">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+<!--  -->
+<input type="hidden" name="on0" value="Size">Please Select Size:&nbsp;&nbsp;
+<SELECT name="os0">
+<OPTION value="Small" selected>Small - $18.00</OPTION>
+<OPTION value="Medium">Medium - $18.00</OPTION>
+<OPTION value="Large">Large - $18.00</OPTION>
+</SELECT>
+<!--  -->
+<!-- option_index value=0 is associated with variable on0 -->
+<!-- option_index value=1 is associated with variable on1 -->
+<input type="hidden" name="option_index" value="0">
+<!--  -->
+<input type="hidden" name="option_select0" value="Small">
+<input type="hidden" name="option_amount0" value="18.00">
+<input type="hidden" name="option_item_number0" value="1001-S">
+<!--  -->
+<input type="hidden" name="option_select1" value="Medium">
+<input type="hidden" name="option_amount1" value="18.00">
+<input type="hidden" name="option_item_number1" value="1001-M">
+<!--  -->
+<input type="hidden" name="option_select2" value="Large">
+<input type="hidden" name="option_amount2" value="18.00">
+<input type="hidden" name="option_item_number2" value="1001-L">
+<!--  -->
+<br><br>
+<input type="hidden" name="on1" value="Shipping">Please Choose your Shipping Option:&nbsp;&nbsp;
+<SELECT name="os1">
+<OPTION value="UPS Ground - $8.00" selected>UPS Ground - $8.00</OPTION>
+<OPTION value="UPS 2 Day - $20.00">UPS 2 Day - $20.00</OPTION>
+<OPTION value="UPS Overnight - $30.00">UPS Overnight - $30.00</OPTION>
+<OPTION value="USPS Priority Mail - $8.25">USPS Priority Mail - $8.25</OPTION>
+<OPTION value="Store Pick Up - No Charge">Store Pick Up - No Charge</OPTION>
+</SELECT>
+<br><br>
+<INPUT onclick=CalculateOrder(this.form) type="image" alt="Make payments with PayPal - it's fast, free and secure!" 
+src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border=0 name="submit">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- End of Form -->
+
+<br>
+
+<!--  Start of View Cart Button Code  -->
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
+<input type="hidden" name="cpp_header_image" value="https://www.yourwebsite.com/logo.jpg"> 
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="display" value="1">
+<!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
+<input type="hidden" name="business" value="marchrahul@gmail.com">
+<!-- Replace value with the web page you want the customer to return to -->
+<input type="hidden" name="shopping_url" value="http://www.yourwebsite.com/Shipping_Delivery_08.html">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form> 
+<!--  End of View Cart Button Code  -->
+
+
+
+<!-- END BUTTON EXAMPLES -->
+
+
+
+<!-- END SAMPLE CODE SECTION -->
+
+</body>
+</html>
+ 
